@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entre</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="style.css">
+
+<style>
+    .support-wrapper {
+      max-width: 700px;
+      margin: 0 auto;
+      padding: 50px 30px 70px;
+    }
+
+    .support-wrapper .intro {
+      color: #bbbbbb;
+      font-size: 15px;
+      line-height: 1.75;
+      margin-bottom: 8px;
+    }
+
+    .support-wrapper .obs {
+      color: #666;
+      font-size: 13px;
+      font-style: italic;
+      margin-bottom: 32px;
+    }
+
+    /* FORM */
+    .contact-form {
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+    }
+
+    .form-field label {
+      display: block;
+      font-size: 12px;
+      color: #888;
+      font-weight: bold;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      margin-bottom: 6px;
+    }
+
+    .form-field label span { color: #cc5555; }
+
+    .form-field input,
+    .form-field textarea,
+    .form-field select {
+      width: 100%;
+      background: #040407;
+      border: 1px solid #114b7a;
+      color: #cccccc;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 14px;
+      padding: 9px 12px;
+      outline: none;
+      transition: border-color 0.15s;
+    }
+
+    .form-field input:focus,
+    .form-field textarea:focus,
+    .form-field select:focus { border-color: #06ade0; }
+
+    .form-field input::placeholder,
+    .form-field textarea::placeholder { color: #555; }
+
+    .form-field textarea {
+      min-height: 150px;
+      resize: vertical;
+    }
+
+    .form-field select option { background: #111; }
+
+    .form-submit { margin-top: 6px; }
+
+    .form-submit button {
+      background: #ffffff;
+      color: #111111;
+      border: none;
+      padding: 11px 28px;
+      font-size: 12px;
+      font-weight: bold;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      cursor: pointer;
+      transition: background 0.15s;
+    }
+    .form-submit button:hover { background: #0061af; }
+
+
+
+  </style>
+
+</head>
+<body>
+
+
+<div style="margin-top: 120px;" class="projetos-header">
+    <h2 class="projetos-heading fade-up">Faça<br><em>História</em></h2>
+    <p class="projetos-header-note fade-in">Entre para o Ephemeral Winter e faça parte desse coletivo para fortalecer a arte<br>macaco sozinho, fraco. macaco junto, forte</p>
+</div>
+
+<div class="skew-line"></div>
+
+<div>
+    <div class="support-wrapper">
+        <p class="intro">XXXX XXXXX XXXXXX.</p>
+        <p class="obs">XXXXXXXXX</p>
+
+        <div class="contact-form">
+        <div class="form-field">
+            <label>Nome <span>*</span></label>
+            <input type="text" placeholder="Seu nome de registro">
+        </div>
+        <div class="form-field">
+            <label>Nome Social</label>
+            <input type="text" placeholder="Seu nome">
+        </div>
+        <div class="form-field">
+            <label>Nome do estudio(se aplicavel)</label>
+            <input type="text" placeholder="Nome do estudio">
+        </div>
+        <div class="form-field">
+            <label>E-mail <span>*</span></label>
+            <input type="email" placeholder="seu@email.com">
+        </div>
+        <div class="form-field">
+            <label>Portifolio<span>*</span></label>
+            <input type="text" placeholder="ex.: SeuLink.itch.io">
+        </div>
+        <div class="form-field">
+            <label>Como ficou sabendo da Ephemeral Winter? <span>*</span></label>
+            <select>
+            <option value="">Selecione um</option>
+            <option>Instagram</option>
+            <option>Twitter(X)</option>      
+            <option>YouTube</option>
+            <option>TikTok</option>
+            <option>E-mail</option>
+            <option>Facebook</option>
+            <option>Bluesky</option>
+            <option>Mastodon</option>
+            <option>Twitch</option>
+            <option>Anuncio online</option>
+            <option>Anuncio televisivo</option>
+            <option>Anuncio em rádio</option>
+            <option>Lambe-Lambe</option>
+            <option>Carro de som</option>
+            <option>Boca a boca</option>
+            <option>Transmissão de ondas curtas</option>
+            <option>Recepção no espeço astral</option>
+            <option>Clarividencia</option>
+            <option>Visão além do alcance</option>
+            <option>Outro</option>
+            </select>
+        </div>
+        <div class="form-field">
+            <label>Descreva suas intenções</label>
+            <textarea placeholder="Descreva seus propósitos e objetivos para a sociedade e cultura..."></textarea>
+        </div>
+
+        <div class="form-submit">
+            <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+            <label style="font-family: Arial, Helvetica, sans-serif; font-size: 14px; font-weight: bold; " for="vehicle1"> Eu <a href="concorde.html">concordo</a></label><br>
+            <br>
+            <button type="button">Enviar</button>
+        </div>
+        </div>
+    </div>
+</div>
+<div class="skew-line"></div>
+
+<footer>
+  <div class="footer-name">Ephemeral Winter</div>
+  <div class="footer-motto">
+    "O gelo não pede desculpa pela frieza. Nós também não."
+  </div>
+  <div class="footer-copy">
+    © 2026 Ephemeral Winter<br>
+    Estúdio Coletivo de projetoss<br>
+    São Paulo, Brasil
+  </div>
+</footer>
+
+
+<script>
+// Scroll reveal
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(e => {
+    if (e.isIntersecting) {
+      e.target.classList.add('in');
+      observer.unobserve(e.target);
+    }
+  });
+}, { threshold: 0.08 });
+
+document.querySelectorAll('.fade-up, .fade-in').forEach(el => observer.observe(el));
+
+// Nav smooth scroll
+document.querySelectorAll('a[href^="#"]').forEach(a => {
+  a.addEventListener('click', e => {
+    e.preventDefault();
+    const t = document.querySelector(a.getAttribute('href'));
+    if (t) window.scrollTo({ top: t.offsetTop - 40, behavior: 'smooth' });
+  });
+});
+</script>
+</body>
+</html>
